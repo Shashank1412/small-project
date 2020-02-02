@@ -1,0 +1,41 @@
+<html>
+<head>
+    <style>
+        .checkbox-group label input[type=checkbox]:checked+span,
+        .radio-group label input[type=radio]:checked+span{
+            color:#FFF;
+            background-color:#d7273c;
+            border-color:#d7273c;
+            position:relative;
+            z-index:1;
+        }
+        
+        .checkbox-group label input[type=checkbox]+span,
+        .radio-group label input[type=radio]+span{
+            display: block;
+            height: 33px;
+            line-height: 33px;
+            font-size:12px;
+            padding-left:0px;
+            padding-right:0px;
+            background:#FFF;
+            border: 1px solid #ddd;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="radio-group clearfix" style="margin-right:-1px">
+        <label>
+            <input checked type="radio" name="type" value="advertiser">
+            <span>I want a direct account</span>
+        </label>
+        <label>
+            <input type="radio" name="type" value="agency">
+            <span>I want an agency account</span>
+        </label>
+    </div>
+</body>
+</html>
